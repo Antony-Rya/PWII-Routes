@@ -1,5 +1,12 @@
 import { useParams } from "react-router-dom"
-export default function Contato(){
+import BotaoVoltar from "./BotaoVoltar/BotaoVoltar"
+export default function Produto(){
     const {id} = useParams()
-    return <h1> Produto com o id {id}</h1>
+    return (
+        <div>
+            <h1> Produto com o id: {id}</h1>
+            <BotaoVoltar />
+        </div>
+        
+    )
 }
