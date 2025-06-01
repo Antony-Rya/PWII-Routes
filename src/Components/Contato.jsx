@@ -1,3 +1,11 @@
+import BotaoVoltar from "./BotaoVoltar/BotaoVoltar"
+
 export default function Contato(){
-    return( <h1>Contato do developer</h1> )
+    return( 
+        <div>
+            <h1>Contato do developer</h1> 
+            <BotaoVoltar />
+        </div>
+        
+    )
 }

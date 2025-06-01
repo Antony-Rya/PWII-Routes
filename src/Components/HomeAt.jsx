@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Contato from './Contato';
 import PagInicial from './PagInicial';
 import Produto from './Produto'
+import Categoria from './Categoria';
 
 function HomeAt() {
     const [id, setId] = useState('')
@@ -21,7 +22,7 @@ function HomeAt() {
                     <Link to={'/'}>Home</Link>|
                     <Link to={'/contato'}>Contato</Link>|
                     <Link to={`/produto/${id}`}>Ver Produto</Link>|
-                    <Link to={'/Home'}>Ver Categoria</Link>
+                    <Link to={`/categoria/${id}`}>Ver Categoria</Link>
 
 
                 </nav>
@@ -29,7 +30,7 @@ function HomeAt() {
                     <Route path='/' element={<PagInicial />}></Route>
                     <Route path='/contato' element={<Contato />}></Route>
                     <Route path='/produto/:id' element={<Produto />}></Route>
-                    <Route path='/categoria/:categoria'></Route>
+                    <Route path='/categoria/:id' element={<Categoria />}></Route>
                 </Routes>
             </div>
         </BrowserRouter>
